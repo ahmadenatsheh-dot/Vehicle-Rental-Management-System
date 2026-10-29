@@ -18,7 +18,7 @@ public class Car extends Vehicles
 
     public void setNumberofseats(int numberofseats) 
     {
-        if(numberofseats>=2)
+        if(numberofseats>=2&&numberofseats<=7)
         this.numberOfSeats = numberofseats;
         else
         {
@@ -29,7 +29,8 @@ public class Car extends Vehicles
     @Override
      public  double calculateRentalCost(int days)
      {
-         return days*getDailyRentalRate();
+         double extrafee = (getNumberofseats()>5)?0.1:0.0;
+         return days*getDailyRentalRate()+(extrafee*getDailyRentalRate()*days);
      }
      
     @Override
