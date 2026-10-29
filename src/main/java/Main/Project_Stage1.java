@@ -1,4 +1,4 @@
-package com.mycompany.project_stage1;
+package Main;
 
 import Models.*;
 import static Models.Customer.isValidPhoneNumber;
