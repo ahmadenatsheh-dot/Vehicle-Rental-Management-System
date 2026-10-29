@@ -1,18 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Models;
 
-
-
-/**
- *
- * @author Ahmad
- */
 public class Car extends Vehicles 
 {
-private int numberOfSeats;
+    private int numberOfSeats;
     public Car(String registrationNumber, String brand, String color, double dailyRentalRate, boolean isAvailabl,int numberOfSeats) 
     {
         super(registrationNumber, brand, color, dailyRentalRate, isAvailabl);
