@@ -35,7 +35,7 @@ private int engineCapacity;
     {
        double extrafee = (engineCapacity>=600) ? (0.25*getDailyRentalRate()):0.0;
             
-        return days*getDailyRentalRate()+(extrafee*getDailyRentalRate()*days);
+        return days*getDailyRentalRate()+(extrafee*days);
     }
 
     @Override
